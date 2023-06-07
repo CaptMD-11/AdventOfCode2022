@@ -7,7 +7,7 @@ public class Runner {
         // System.out.println(str.length());
 
         Day3 obj = new Day3();
-        System.out.println(obj.getPrioritySum());
+        System.out.println(obj.getGroupPrioritySum());
 
     }
 }
