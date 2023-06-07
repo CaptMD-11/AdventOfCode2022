@@ -6,8 +6,11 @@ public class Runner {
         // String str = "PmmdzqPrVvPwwTWBwg";
         // System.out.println(str.length());
 
-        Day3 obj = new Day3();
-        System.out.println(obj.getGroupPrioritySum());
+        // Day3 obj = new Day3();
+        // System.out.println(obj.getGroupPrioritySum());
+
+        Day4 obj = new Day4();
+        System.out.println(obj.numberOfFullyContain());
 
     }
 }
