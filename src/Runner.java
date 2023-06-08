@@ -10,7 +10,7 @@ public class Runner {
         // System.out.println(obj.getGroupPrioritySum());
 
         Day4 obj = new Day4();
-        System.out.println(obj.numberOfFullyContain());
+        System.out.println(obj.numberOfOverlapAtAll());
 
     }
 }
