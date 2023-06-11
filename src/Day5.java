@@ -10,88 +10,105 @@ public class Day5 {
             Scanner scanner = new Scanner(file);
             String line = "";
 
-            ArrayList<String> stack1 = new ArrayList<String>();
-            ArrayList<String> stack2 = new ArrayList<String>();
-            ArrayList<String> stack3 = new ArrayList<String>();
-            ArrayList<String> stack4 = new ArrayList<String>();
-            ArrayList<String> stack5 = new ArrayList<String>();
-            ArrayList<String> stack6 = new ArrayList<String>();
-            ArrayList<String> stack7 = new ArrayList<String>();
-            ArrayList<String> stack8 = new ArrayList<String>();
-            ArrayList<String> stack9 = new ArrayList<String>();
+            Stack<String> stack1 = new Stack<String>();
+            Stack<String> stack2 = new Stack<String>();
+            Stack<String> stack3 = new Stack<String>();
+            Stack<String> stack4 = new Stack<String>();
+            Stack<String> stack5 = new Stack<String>();
+            Stack<String> stack6 = new Stack<String>();
+            Stack<String> stack7 = new Stack<String>();
+            Stack<String> stack8 = new Stack<String>();
+            Stack<String> stack9 = new Stack<String>();
 
-            stack1.add("n");
-            stack1.add("s");
-            stack1.add("d");
-            stack1.add("c");
-            stack1.add("v");
-            stack1.add("q");
-            stack1.add("t");
+            stack1.push("n");
+            stack1.push("s");
+            stack1.push("d");
+            stack1.push("c");
+            stack1.push("v");
+            stack1.push("q");
+            stack1.push("t");
 
-            stack2.add("m");
-            stack2.add("f");
-            stack2.add("v");
+            stack2.push("m");
+            stack2.push("f");
+            stack2.push("v");
 
-            stack3.add("f");
-            stack3.add("q");
-            stack3.add("w");
-            stack3.add("d");
-            stack3.add("p");
-            stack3.add("n");
-            stack3.add("h");
-            stack3.add("m");
+            stack3.push("f");
+            stack3.push("q");
+            stack3.push("w");
+            stack3.push("d");
+            stack3.push("p");
+            stack3.push("n");
+            stack3.push("h");
+            stack3.push("m");
 
-            stack4.add("d");
-            stack4.add("q");
-            stack4.add("r");
-            stack4.add("t");
-            stack4.add("f");
+            stack4.push("d");
+            stack4.push("q");
+            stack4.push("r");
+            stack4.push("t");
+            stack4.push("f");
 
-            stack5.add("r");
-            stack5.add("f");
-            stack5.add("m");
-            stack5.add("n");
-            stack5.add("q");
-            stack5.add("h");
-            stack5.add("v");
-            stack5.add("b");
+            stack5.push("r");
+            stack5.push("f");
+            stack5.push("m");
+            stack5.push("n");
+            stack5.push("q");
+            stack5.push("h");
+            stack5.push("v");
+            stack5.push("b");
 
-            stack6.add("c");
-            stack6.add("f");
-            stack6.add("g");
-            stack6.add("n");
-            stack6.add("p");
-            stack6.add("w");
-            stack6.add("q");
+            stack6.push("c");
+            stack6.push("f");
+            stack6.push("g");
+            stack6.push("n");
+            stack6.push("p");
+            stack6.push("w");
+            stack6.push("q");
 
-            stack7.add("w");
-            stack7.add("f");
-            stack7.add("r");
-            stack7.add("l");
-            stack7.add("c");
-            stack7.add("t");
+            stack7.push("w");
+            stack7.push("f");
+            stack7.push("r");
+            stack7.push("l");
+            stack7.push("c");
+            stack7.push("t");
 
-            stack8.add("t");
-            stack8.add("z");
-            stack8.add("n");
-            stack8.add("s");
+            stack8.push("t");
+            stack8.push("z");
+            stack8.push("n");
+            stack8.push("s");
 
-            stack9.add("m");
-            stack9.add("s");
-            stack9.add("d");
-            stack9.add("j");
-            stack9.add("r");
-            stack9.add("q");
-            stack9.add("h");
-            stack9.add("n");
+            stack9.push("m");
+            stack9.push("s");
+            stack9.push("d");
+            stack9.push("j");
+            stack9.push("r");
+            stack9.push("q");
+            stack9.push("h");
+            stack9.push("n");
+
+            boolean stack1Select = false;
+            boolean stack2Select = false;
+            boolean stack3Select = false;
+            boolean stack4Select = false;
+            boolean stack5Select = false;
+            boolean stack6Select = false;
+            boolean stack7Select = false;
+            boolean stack8Select = false;
+            boolean stack9Select = false;
 
             while (scanner.hasNextLine()) {
                 line = scanner.nextLine();
                 int amountToMove = Integer.parseInt(line.substring(line.indexOf(" ") + 1), line.indexOf("f") - 1);
-                for (int i = 0; i < amountToMove; i++) {
+                Stack<String> temp1 = new Stack<String>();
+                Stack<String> temp2 = new Stack<String>();
+                if (line.substring(line.lastIndexOf("m") + 2, line.lastIndexOf("t") - 1).equals("1")) {
+                    if (line.substring(line.lastIndexOf("o") + 1).equals("1")) {
 
+                    }
                 }
             }
+
+            scanner.close();
+
         } catch (Exception e) {
             System.out.println(e);
         }
